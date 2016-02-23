@@ -9,6 +9,7 @@ from collections import Counter
 
 __version__ = '0.4.1'
 
+
 class TypeInfo(object):
     "Sampling and frequency of a type for a sample of values."
     def __init__(self, name, size=None, total=None):
@@ -188,8 +189,6 @@ class Strconv(object):
             info.set_total(i)
 
         return infos
-
-
 
 # Use dateutil for more robust parsing
 try:
