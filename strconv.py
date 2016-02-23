@@ -2,10 +2,12 @@
 # Copyright (c) 2013 Byron Ruth
 # BSD License
 
-__version__ = '0.4.1'
-
+# Built-in converters
+import re
+from datetime import datetime
 from collections import Counter
 
+__version__ = '0.4.1'
 
 class TypeInfo(object):
     "Sampling and frequency of a type for a sample of values."
@@ -188,11 +190,6 @@ class Strconv(object):
         return infos
 
 
-# Built-in converters
-
-import re
-
-from datetime import datetime
 
 # Use dateutil for more robust parsing
 try:
